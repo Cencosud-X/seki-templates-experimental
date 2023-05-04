@@ -100,7 +100,7 @@ export default class App extends React.Component<IProps, PageState> {
             <Title level={3}>Use the Seki SDK to access the Seki API:</Title>
             <TextArea
               rows={10}
-              style={{width: '80%'}}
+              style={ {width: '80%'} }
               value={sekiSDKExample} />
 
             <Title level={3}>Use cool ninja images to keep the Seki's mystic and style:</Title>
