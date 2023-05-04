@@ -38,12 +38,12 @@ export default class BootingPage extends React.Component<IProps, IState> {
           colorPrimary: '#df1a5f'
         }
       } }>
-      <div style={{
+      <div style={ {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         padding: 80
-        }}>
+        } }>
         <Spin size='large' tip='Cargando...' />
       </div>
       </ConfigProvider>

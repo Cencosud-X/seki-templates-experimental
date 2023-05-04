@@ -64,7 +64,7 @@ export default class App extends React.Component<IProps, PageState> {
     const theCloudComponents = theWorkspace?.cloud.components
 
     return (
-      <AppContext.Provider value={{secrets}} >
+      <AppContext.Provider value={ {secrets} } >
         <ConfigProvider
           theme={ { algorithm: theme.darkAlgorithm,
             token: {
@@ -82,12 +82,12 @@ export default class App extends React.Component<IProps, PageState> {
             <Title level={3}>Use the ContextData object to access workspace information:</Title>
             <TextArea
               rows={10}
-              style={{width: '80%'}}
+              style={ {width: '80%'} }
               value={JSON.stringify(extensionContextData, null, 2)} />
 
             <Title level={4}>For instance, you could list the product maintainers:</Title>
             {extensionContextData?.maintainers.map(m =>
-              <img title={m.login} src={m.avatar_url} style={{height: '60px', width: '60px', padding: '10px'}} />)}
+              <img title={m.login} src={m.avatar_url} style={ {height: '60px', width: '60px', padding: '10px'} } />)}
 
             <Title level={4}>and the projects({theProjects?.length}):</Title>
             <Title level={5}>{theProjects?.map(p=>

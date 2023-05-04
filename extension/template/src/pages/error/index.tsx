@@ -9,11 +9,11 @@ interface IProps {
 const ErrorPage = ({message}: IProps) => {
   return (
     <ConfigProvider
-      theme={{
+      theme={ {
         token: {
           colorText: '#df1a5f',
         }
-      }}>
+      } }>
       <Result
         title={message}
         icon={<img src={ErrorImage} width={300} height={300} />}
