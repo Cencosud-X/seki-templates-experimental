@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Cencosud-X/seki-schemas/main/v1/projects/manifiestrc.schema.json",
+  "name": "Experimental project types",
+  "author": {
+    "github_user": "jcgomezcorrea",
+    "name": "Team Seki"
+  },
+  "icons": {
+    "dark": "logo.svg",
+    "light": "logo.svg"
+  },
+  "descriptions": {
+    "en": "Experimental projects",
+    "es": "Proyectos experimentales"
+  },
+  "types": [
+    "extension/typerc.json"
+  ]
+}
