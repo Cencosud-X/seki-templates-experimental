@@ -66,11 +66,11 @@ export default class App extends React.Component<IProps, PageState> {
     return (
       <AppContext.Provider value={{secrets}} >
         <ConfigProvider
-          theme={{ algorithm: theme.darkAlgorithm,
+          theme={ { algorithm: theme.darkAlgorithm,
             token: {
               colorPrimary: '#df1a5f'
             }
-          }}>
+          } }>
             <Title>Hello! This is a Seki extension!</Title>
             <Title level={5}>You can extend Seki in any way you want. The sky is the limit!</Title>
 

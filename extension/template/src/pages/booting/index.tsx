@@ -33,11 +33,11 @@ export default class BootingPage extends React.Component<IProps, IState> {
   override render() {
     return (
       <ConfigProvider
-      theme={{ algorithm: theme.darkAlgorithm,
+      theme={ { algorithm: theme.darkAlgorithm,
         token: {
           colorPrimary: '#df1a5f'
         }
-      }}>
+      } }>
       <div style={{
         display: 'flex',
         alignItems: 'center',
