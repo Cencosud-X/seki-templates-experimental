@@ -89,11 +89,11 @@ export default class App extends React.Component<IProps, PageState> {
             {extensionContextData?.maintainers.map(m =>
               <img title={m.login} src={m.avatar_url} style={ {height: '60px', width: '60px', padding: '10px'} } />)}
 
-            <Title level={4}>and the projects({theProjects?.length}):</Title>
+            <Title level={4}>... the projects({theProjects?.length}):</Title>
             <Title level={5}>{theProjects?.map(p=>
               <ol>{p.name}({p.configuration.kind})</ol>)}</Title>
 
-            <Title level={4}>and the cloud-components({theCloudComponents?.length}):</Title>
+            <Title level={4}>... and the cloud-components({theCloudComponents?.length}):</Title>
             <Title level={5}>{theCloudComponents?.map(cc=>
               <ol>{cc.kind}({cc.identifier})</ol>)}</Title>
 

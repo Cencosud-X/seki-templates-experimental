@@ -56,7 +56,8 @@
       },
       "configurations": {
         "development": {
-          "buildTarget": "{{data.path}}:build:development"
+          "buildTarget": "{{data.path}}:build:development",
+          "port": 4300
         },
         "release": {
           "buildTarget": "{{data.path}}:build:release",
