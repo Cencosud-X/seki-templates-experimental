@@ -1,7 +1,5 @@
 import { ConfigProvider, Result } from 'antd'
 
-import ErrorImage from './../../assets/not-found.png';
-
 interface IProps {
   message: string
 }
@@ -16,7 +14,7 @@ const ErrorPage = ({message}: IProps) => {
       } }>
       <Result
         title={message}
-        icon={<img src={ErrorImage} width={300} height={300} />}
+        icon={<img src="assets/not-found.svg" width={300} height={300} />}
       />
     </ConfigProvider>
   )

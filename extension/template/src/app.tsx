@@ -1,8 +1,8 @@
 import React from 'react'
 
 import { IExtensionContextData } from '@team_seki/extension-sdk'
-import { ConfigProvider, Descriptions, Input, theme, Typography } from 'antd'
 
+import { ConfigProvider, Descriptions, Input, theme, Typography } from 'antd'
 const { TextArea } = Input;
 const { Title } = Typography;
 
@@ -85,7 +85,7 @@ export default class App extends React.Component<IProps, PageState> {
               style={ {width: '80%'} }
               value={JSON.stringify(extensionContextData, null, 2)} />
 
-            <Title level={4}>For instance, you could list the product maintainers:</Title>
+            <Title level={4}>For instance, you could list the product maintainers({extensionContextData?.maintainers.length}):</Title>
             {extensionContextData?.maintainers.map(m =>
               <img title={m.login} src={m.avatar_url} style={ {height: '60px', width: '60px', padding: '10px'} } />)}
 
@@ -104,7 +104,7 @@ export default class App extends React.Component<IProps, PageState> {
               value={sekiSDKExample} />
 
             <Title level={3}>Use cool ninja images to keep the Seki's mystic and style:</Title>
-            <ErrorPage message='Show error message here' />
+            <ErrorPage message='Show some message here' />
 
         </ConfigProvider>
       </AppContext.Provider>
